@@ -1,8 +1,17 @@
 import React from "react";
 
-const Button = () => {
+const Button = ({
+  children,
+  primary,
+  secondary,
+  success,
+  warning,
+  danger,
+  outline,
+  rounded,
+}) => {
   // Component Logic
-  return <button>Click me!</button>;
+  return <button>{children}</button>;
 };
 
 export default Button;
