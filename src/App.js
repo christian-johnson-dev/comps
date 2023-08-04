@@ -1,23 +1,41 @@
+import React from "react";
 import Button from "./Button";
+import { GoBell, GoCircleSlash, GoGlobe, GoRss, GoTrash } from "react-icons/go";
 
 const App = () => {
-  // Component Logic
   return (
-    <div>
+    <div className="App">
       <div>
-        <Button>Click me!!</Button>
+        <Button primary outline>
+          <GoBell />
+          Button One
+        </Button>
       </div>
       <div>
-        <Button></Button>
+        <Button secondary>
+          <GoGlobe />
+          Button Two
+        </Button>
       </div>
       <div>
-        <Button></Button>
+        <Button success rounded>
+          <GoRss />
+          Button Three
+        </Button>
       </div>
       <div>
-        <Button></Button>
+        <Button warning outline>
+          <GoTrash />
+          Button Four
+        </Button>
+      </div>
+      <div>
+        <Button danger rounded>
+          <GoCircleSlash />
+          Button Five
+        </Button>
       </div>
     </div>
   );
 };
-
 export default App;
